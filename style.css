@@ -490,8 +490,74 @@ svg#react:hover {
 
 /* Projects */
 
+input {
+    display: none;
+}
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+}
+
+.cards label {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.cards .card {
+    position: relative;
+}
+
+
 #projects {
     height: 100%;
+    transform-style: preserve-3d;
+    overflow: hidden;
 }
 
 
@@ -515,12 +581,18 @@ svg#react:hover {
 }
 
 .cards {
-    border: 5px solid var(--tertiary-color);
+
     border-radius: 10px;
     padding: 60px;
-    background: var(--bg-all-light);
+
     gap: 100px;
 
+    position: relative;
+
+    margin-bottom: 600px;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -572,6 +644,10 @@ svg#react:hover {
 
 #dot-5 {
     background-color: #563D7C;
+}
+
+#dot-6 {
+    background-color: #F1E05A;
 }
 
 
@@ -851,6 +927,10 @@ footer p {
 }
 
 @media(max-width: 768px) {
+    .cards {
+        margin-bottom: 700px;
+    }
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -892,6 +972,22 @@ footer p {
 
 @media(max-width: 425px) {
 
+    .cards {
+        margin-bottom: 700px;
+        margin-left: 50px;
+    }
+
+    .cards label {
+        width: 250px;
+    }
+
+    .card {
+        width: 305px;
+        height: 503px;
+    }
+
+
+
     section {
         height: 100%;
     }
@@ -923,19 +1019,8 @@ footer p {
         max-width: 350px;
     }
 
-    .cards {
-        gap: 20px;
-        padding: 20px 0px;
-        margin: 0 20px;
-    }
-
-    .card {
-        width: 270px;
-        height: 520px;
-    }
-
     .img-card img {
-        width: 270px;
+        width: 305px;
     }
 
     .desc-project-card {
@@ -953,10 +1038,6 @@ footer p {
     .desc-project-card p {
         max-width: 200px;
         font-size: 13px;
-    }
-
-    #projects {
-        margin: 0px 0px 200px 0px;
     }
 
     .mainMenu {
@@ -993,6 +1074,21 @@ footer p {
 }
 
 @media(max-width: 375px) {
+
+    .cards {
+        margin-bottom: 700px;
+        margin-left: 35px;
+    }
+
+    .cards label {
+        width: 220px;
+    }
+
+    .card {
+        width: 285px;
+        height: 515px;
+    }
+
     .avatar {
         max-width: 320px;
     }
@@ -1039,6 +1135,27 @@ footer p {
 }
 
 @media(max-width: 320px) {
+
+
+    .cards {
+        margin-bottom: 700px;
+        margin-left: 20px;
+    }
+
+    .cards label {
+        width: 170px;
+    }
+
+    .card {
+        width: 255px;
+        height: 515px;
+    }
+
+    .img-card img {
+        width: 255px;
+    }
+
+
     footer p {
         font-size: 0.7rem;
     }
@@ -1047,7 +1164,4 @@ footer p {
         max-width: 318px;
     }
 
-    .cards {
-        margin: 0px 5px 200px;
-    }
 }
