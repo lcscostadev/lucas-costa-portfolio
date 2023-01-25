@@ -4,7 +4,7 @@ Welcome to my web developer portfolio README, this project was amazing to do and
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/lcscostadev/lucas-costa-portfolio/main/fullpage-portfolio.png)
+![App Screenshot](https://raw.githubusercontent.com/lcscostadev/lucas-costa-portfolio/main/fullpage-portfolio-screenshot.png)
 
 
 ## Stack for this project
