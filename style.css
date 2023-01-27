@@ -28,6 +28,27 @@ section {
     gap: 3px;
 }
 
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack p {
+    padding: 0;
+    text-align: left;
+}
+
+.stack .first {
+    margin-top: 50px;
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
 /* Resets-END */
 
 :root {
@@ -370,6 +391,7 @@ p {
     position: absolute;
     z-index: 1;
 }
+
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
