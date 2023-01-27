@@ -19,6 +19,9 @@ Welcome to my web developer portfolio README, this project was amazing to do and
 - animated icons
 - carousel
 - fixed navbar
+- modals
+- hamburger menu
+- 3D Slider
 
 ## improvements
 
