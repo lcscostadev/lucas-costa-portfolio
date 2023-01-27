@@ -55,11 +55,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.border {
-    border: 6px solid var(--tertiary-color);
-    border-radius: 10px;
-}
-
 span,
 .mainMenu,
 .btn {
@@ -567,7 +562,6 @@ input {
 
 
 #projects {
-    height: 100%;
     transform-style: preserve-3d;
     overflow: hidden;
 }
@@ -988,7 +982,7 @@ footer p {
 @media(max-width: 1024px) {
 
     .hero {
-        margin: 100px 30px;
+        margin: 150px 30px;
         align-items: center;
     }
 
@@ -1011,7 +1005,7 @@ footer p {
     .about {
         flex-direction: column-reverse;
         gap: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 250px;
     }
 
     .about-text {
@@ -1032,9 +1026,18 @@ footer p {
         max-width: 600px;
     }
 
-    #projects {
-        margin-top: 300px;
+    .modal {
+        width: 800px;
     }
+
+    .title img {
+        width: 800px;
+    }
+
+    #projects {
+        margin-top: 685px;
+    }
+
 
     .cards {
         margin: 0px 90px;
@@ -1050,9 +1053,12 @@ footer p {
         text-align: center;
     }
 
-
     #discord-card .desc-project-card {
         text-align: center;
+    }
+
+    #contact {
+        height: 70vh;
     }
 }
 
@@ -1098,6 +1104,14 @@ footer p {
         display: block;
     }
 
+    .modal {
+        width: 700px;
+    }
+
+    .title img {
+        width: 700px;
+    }
+
 }
 
 @media(max-width: 425px) {
@@ -1115,8 +1129,6 @@ footer p {
         width: 305px;
         height: 503px;
     }
-
-
 
     section {
         height: 100%;
@@ -1201,6 +1213,21 @@ footer p {
         padding: 5px 0px 20px 0px;
     }
 
+
+    .modal {
+        width: 400px;
+    }
+
+    .title img {
+        width: 400px;
+    }
+
+    .close-modal {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+
+
 }
 
 @media(max-width: 375px) {
@@ -1262,6 +1289,8 @@ footer p {
     }
 
 
+
+
 }
 
 @media(max-width: 320px) {
@@ -1293,5 +1322,15 @@ footer p {
     .logotext {
         max-width: 318px;
     }
+
+
+    .modal {
+        width: 310px;
+    }
+
+    .title img {
+        width: 310px;
+    }
+
 
 }
