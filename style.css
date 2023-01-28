@@ -830,7 +830,9 @@ input {
 /* footer */
 
 footer {
+    padding: 10px;
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     background: #13132e;
@@ -838,6 +840,7 @@ footer {
 
 footer p {
     font-size: 13px;
+    padding: 0;
 }
 
 /* Loader */
