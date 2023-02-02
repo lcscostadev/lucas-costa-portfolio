@@ -1,4 +1,4 @@
-// Loader página
+// Page Loader
 const overlay = document.querySelector(".overlay");
 
 window.addEventListener('load', function () {
