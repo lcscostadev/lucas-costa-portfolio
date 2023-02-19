@@ -1154,9 +1154,13 @@ footer p {
         height: 503px;
     }
 
-    section {
-        height: 100%;
+    #skills {
+        margin-bottom: 1000px;
     }
+
+    /* section {
+        height: 100%;
+    } */
 
     .medias-footer {
         margin-top: 200px;
@@ -1179,7 +1183,6 @@ footer p {
     .avatar {
         max-width: 320px;
     }
-
 
     .journey-container {
         max-width: 350px;
