@@ -584,6 +584,7 @@ input {
 #projects {
     transform-style: preserve-3d;
     overflow: hidden;
+    padding-top: 30px;
 }
 
 
@@ -642,7 +643,8 @@ input {
 
 .projects-title {
     text-align: center;
-    padding: 20px 20px 50px 20px;
+    padding: 20px 20px 70px 20px;
+    margin-top: 150px;
 }
 
 .dots-wrapper {
@@ -1060,8 +1062,8 @@ footer p {
 
     #projects {
         margin-top: 685px;
+        padding-top: 30px;
     }
-
 
     .cards {
         margin: 0px 90px;
