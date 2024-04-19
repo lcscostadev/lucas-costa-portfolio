@@ -286,6 +286,12 @@ section {
     transition: all .5s;
 }
 
+.logo-icon {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
 
 .full:hover {
     color: #a2fbe7;
@@ -297,6 +303,10 @@ section {
     margin: 15px 0;
     padding-inline: 20px;
     font-size: 1.25rem;
+}
+
+.apresentation {
+    color: #ffffffac;
 }
 
 p {
@@ -525,7 +535,8 @@ input {
 #s2:checked~.cards #slide5,
 #s3:checked~.cards #slide1,
 #s4:checked~.cards #slide2,
-#s5:checked~.cards #slide3 {
+#s5:checked~.cards #slide3,
+#s6:checked~.cards #slide4 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
 }
@@ -534,7 +545,8 @@ input {
 #s2:checked~.cards #slide1,
 #s3:checked~.cards #slide2,
 #s4:checked~.cards #slide3,
-#s5:checked~.cards #slide4 {
+#s5:checked~.cards #slide4,
+#s6:checked~.cards #slide4 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
 }
@@ -543,7 +555,8 @@ input {
 #s2:checked~.cards #slide2,
 #s3:checked~.cards #slide3,
 #s4:checked~.cards #slide4,
-#s5:checked~.cards #slide5 {
+#s5:checked~.cards #slide5,
+#s6:checked~.cards #slide4 {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
 }
@@ -552,7 +565,8 @@ input {
 #s2:checked~.cards #slide3,
 #s3:checked~.cards #slide4,
 #s4:checked~.cards #slide5,
-#s5:checked~.cards #slide1 {
+#s5:checked~.cards #slide1,
+#s6:checked~.cards #slide4 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
     transform: translate3d(35%, 0, -120px);
 }
@@ -561,7 +575,8 @@ input {
 #s2:checked~.cards #slide4,
 #s3:checked~.cards #slide5,
 #s4:checked~.cards #slide1,
-#s5:checked~.cards #slide2 {
+#s5:checked~.cards #slide2,
+#s6:checked~.cards #slide4 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
 }
